@@ -1,2 +1,1 @@
-# CSS-Pattern
-A collection of background pattern powered by CSS gradients
+<a href="[https://css-challenges.com/](https://css-pattern.com/)"><img src="https://raw.githubusercontent.com/Afif13/CSS-Pattern/main/css-pattern.jpg" width="800" alt="CSS Pattern"></a>
