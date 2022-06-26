@@ -22,7 +22,7 @@
 		<meta property="og:image:width" content="1600" />
 		<meta property="og:image:height" content="800" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.20">
+    <link rel="stylesheet" href="style.css?v=0.21">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -359,6 +359,25 @@
       0 calc(var(--s)/2)/var(--s) var(--s),    
     conic-gradient(from 135deg at 50% 0,var(--c1) 90deg,var(--c2) 0)  
       0 0/calc(2*var(--s)) var(--s); 
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 36px; /* control the size */
+  --c1: #b62f31;
+  --c2: #ecdacb;
+  --c3: #8e1f08;
+  
+  --_g: calc(2*var(--s)*1.732) calc(2*var(--s)) 
+    conic-gradient(from 60deg at 62.5% 50%,var(--c3) 60deg,#0000 0); 
+  background:
+       calc( 2.598*var(--s)/2) calc(var(--s)/ 2)/var(--_g),
+       calc(-0.866*var(--s)/2) calc(var(--s)/-2)/var(--_g),
+    repeating-conic-gradient(var(--c2) 0 90deg,#0000 0 180deg) 
+       0 0/calc(2*var(--s)*1.732) calc(2*var(--s)),
+    repeating-conic-gradient(from 60deg,var(--c1) 0 60deg,var(--c2) 0 180deg) 
+       0 0/calc(var(--s)*1.732) var(--s)
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
