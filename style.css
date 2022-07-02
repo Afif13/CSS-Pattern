@@ -446,3 +446,16 @@ section:nth-of-type(21) {
     repeating-conic-gradient(from 60deg,var(--c1) 0 60deg,var(--c2) 0 180deg) 
        0 0/calc(var(--s)*1.732) var(--s)
 }
+section:nth-of-type(22) {
+  --s: 125px; /* control the size */
+  --c1: #F8CA00;
+  --c2: #BD1550;
+  
+  --_g: var(--c1) 90deg,var(--c2) 0 135deg,#0000 0;
+  background:
+    conic-gradient(from  -45deg at calc(100%/3)   calc(100%/3)  ,var(--c1) 90deg,#0000 0 ),
+    conic-gradient(from -135deg at calc(100%/3)   calc(2*100%/3),var(--_g)),
+    conic-gradient(from  135deg at calc(2*100%/3) calc(2*100%/3),var(--_g)),
+    conic-gradient(from   45deg at calc(2*100%/3) calc(100%/3)  ,var(--_g),var(--c1) 0 225deg,var(--c2) 0);
+  background-size: var(--s) var(--s);
+}
