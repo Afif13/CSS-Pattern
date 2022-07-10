@@ -22,7 +22,7 @@
 		<meta property="og:image:width" content="1600" />
 		<meta property="og:image:height" content="800" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.23">
+    <link rel="stylesheet" href="style.css?v=0.24">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -412,6 +412,23 @@
     conic-gradient(at 87.5% 87.5%,var(--_c)) calc(var(--s)/8) 0
     #044012; /* color 2 */
   background-size: var(--s) var(--s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	   <section>
+      <pre ><code>html {
+  --s: 170px; /* control the size*/
+  
+  --_c: #0000 75%,#3B8686 0; /* color 1 */
+  --_g1: conic-gradient(at 20.71% 50%,var(--_c));
+  --_g2: conic-gradient(at 50% 20.71%,var(--_c));
+  background:
+    var(--_g1) calc(var(--s)/ 6.828) calc(var(--s)/2),var(--_g1) calc(var(--s)/-2.828) 0,
+    conic-gradient(from   45deg at 29.29% 29.29%,var(--_c)) calc(var(--s)/-6.828) 0,
+    var(--_g2) calc(var(--s)/2) calc(var(--s)/-2.828),var(--_g2) 0 calc(var(--s)/ 6.828),
+    conic-gradient(from -135deg at 29.29% 70.71%,var(--_c)) calc(var(--s)/-6.828) 0,
+    #CFF09E /* color 2 */;
+  background-size: var(--s) var(--s), var(--s) var(--s), calc(var(--s)/2) calc(var(--s)/2);
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
