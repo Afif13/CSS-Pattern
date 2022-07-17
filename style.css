@@ -500,3 +500,23 @@ section:nth-of-type(25) {
       var(--c2) 0 296.15deg,var(--c1) 0);
   background-size: calc(2*var(--s)) var(--s);
 }
+section:nth-of-type(26) {
+  --s: 40px; /* control the size */
+  
+  --_c: #0000 75%,#C0D860 0; /* color 1 */
+  --_g1: conic-gradient(at 10% 50%,var(--_c));
+  --_g2: conic-gradient(at 50% 10%,var(--_c));
+  background:
+    var(--_g1),
+    var(--_g1) calc(1*var(--s)) calc(3*var(--s)),
+    var(--_g1) calc(2*var(--s)) calc(1*var(--s)),
+    var(--_g1) calc(3*var(--s)) calc(4*var(--s)),
+    var(--_g1) calc(4*var(--s)) calc(2*var(--s)),
+    var(--_g2) 0                calc(4*var(--s)),
+    var(--_g2) calc(1*var(--s)) calc(2*var(--s)),
+    var(--_g2) calc(2*var(--s)) 0,
+    var(--_g2) calc(3*var(--s)) calc(3*var(--s)),
+    var(--_g2) calc(4*var(--s)) calc(1*var(--s)),
+    #604848; /* color 2 */
+  background-size: calc(5*var(--s)) calc(5*var(--s));
+}
