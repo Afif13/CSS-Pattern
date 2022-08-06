@@ -554,3 +554,14 @@ section:nth-of-type(28) {
                           var(--c1) 0 calc(500%/6),var(--c2) 0);
   background-size: calc(1.732*var(--s)) var(--s);
 }
+section:nth-of-type(29) {
+  --s: 50px; /* control the size */
+  --c1: #0B2E59;
+  --c2: #0D6759;
+  
+  background:
+    conic-gradient(at 25% 25%,#0000 75%,var(--c1) 0) var(--s) var(--s),
+    repeating-conic-gradient(at 25% 25%,var(--c1) 0 25%,var(--c2) 0 50%);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+   
+}
