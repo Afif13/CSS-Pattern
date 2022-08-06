@@ -6,23 +6,23 @@
     <title>CSS Pattern: Fancy background with gradients</title>
     <link rel="icon" href="fav.png" sizes="any">
     <meta name="monetization" content="$ilp.uphold.com/BKQpnDKX3xwQ">
-		<meta name="description" content="A collection of background pattern made with CSS gradients">
-		<meta name="author" content="Temani Afif">
-		<meta name="robots" content="index, follow">
-		<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-		<link rel=canonical href="https://css-pattern.com" >
+    <meta name="description" content="A collection of background pattern made with CSS gradients">
+    <meta name="author" content="Temani Afif">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel=canonical href="https://css-pattern.com" >
 
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:title" content="CSS Pattern: Fancy background with gradients">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://css-pattern.com">
-		<meta property="og:description" content="A collection of background pattern made with CSS gradients">
-		<meta property="og:image" content="https://css-pattern.com/css-pattern.jpg">
-		<meta property="og:image:width" content="1600" />
-		<meta property="og:image:height" content="800" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.28">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="CSS Pattern: Fancy background with gradients">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://css-pattern.com">
+    <meta property="og:description" content="A collection of background pattern made with CSS gradients">
+    <meta property="og:image" content="https://css-pattern.com/css-pattern.jpg">
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="800" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=0.29">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -507,6 +507,19 @@
     linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
                           var(--c1) 0 calc(500%/6),var(--c2) 0);
   background-size: calc(1.732*var(--s)) var(--s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 50px; /* control the size */
+  --c1: #0B2E59;
+  --c2: #0D6759;
+  
+  background:
+    conic-gradient(at 25% 25%,#0000 75%,var(--c1) 0) var(--s) var(--s),
+    repeating-conic-gradient(at 25% 25%,var(--c1) 0 25%,var(--c2) 0 50%);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
