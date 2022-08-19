@@ -25,6 +25,7 @@ body section {
     place-content: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    background-attachment: fixed!important;
 }
 h1 {
   font-style: normal;
