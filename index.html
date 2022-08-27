@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.33">
+    <link rel="stylesheet" href="style.css?v=0.34">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -594,6 +594,21 @@
     repeating-linear-gradient(-150deg,#B05574 0 calc(100%/6),#0000   0 50%),
     repeating-linear-gradient(-30deg, #B39C82 0 calc(100%/6),#DCD1B4 0 50%);
   background-size: calc(6*.866*var(--s)) calc(3*var(--s))
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 60px; /* control the size */
+  
+  --_g: #0000 83%,#b09f79 85% 99%,#0000 101%;
+  background:
+    radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+    radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+    radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+    radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+    #476074;
+  background-size: calc(2*var(--s)) calc(2*var(--s));
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
