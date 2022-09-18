@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.36">
+    <link rel="stylesheet" href="style.css?v=0.37">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -644,6 +644,19 @@
     radial-gradient(var(--s) at 0    0   ,var(--_g)),
     radial-gradient(var(--s) at 0    100%,var(--_g)),
     radial-gradient(var(--s) at 100% 100%,var(--_g)) var(--c1);
+  background-size: var(--s) var(--s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 150px; /* control the size */
+  
+  --_g: #0000 90deg,#046D8B 0;
+  background:
+    conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
+    conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
+    #2FB8AC;
   background-size: var(--s) var(--s);
 }
 </code><button>Copy the CSS</button></pre>  
