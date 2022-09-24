@@ -680,3 +680,19 @@ section:nth-of-type(37) {
     #2FB8AC;
   background-size: var(--s) var(--s);
 }
+section:nth-of-type(38) { 
+  --s: 60px; /* control the size */
+  --c1: #ffdc56;
+  --c2: #fe6601;
+  --c3: #803201;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g1: var(--_s) conic-gradient(at calc(500%/6) 50%,var(--c3) 25%,#0000 0);
+  --_g2: var(--_s) conic-gradient(at calc(200%/3) 50%,var(--c2) 25%,#0000 0);
+  background:
+    var(--s) var(--s)/var(--_g1),0 0/var(--_g1),
+    var(--s) var(--s)/var(--_g2),0 0/var(--_g2),
+    repeating-conic-gradient(var(--c1) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    linear-gradient(var(--c1) calc(100%/3),var(--c2) 0 calc(200%/3),var(--c3) 0)
+     0 0/var(--s) var(--s); 
+}
