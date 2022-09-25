@@ -696,3 +696,14 @@ section:nth-of-type(38) {
     linear-gradient(var(--c1) calc(100%/3),var(--c2) 0 calc(200%/3),var(--c3) 0)
      0 0/var(--s) var(--s); 
 }
+section:nth-of-type(39) {
+  --s: 50px; /* control the size */
+  
+  --_g: conic-gradient(at 50% 25%,#0000 75%,#f86466 0);
+  background:
+    var(--_g),var(--_g) var(--s) var(--s),
+    var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+    var(--_g) calc(3*var(--s)) calc(3*var(--s)),
+    repeating-linear-gradient(135deg,#000 0 12.5%,#fff 0 25%);
+  background-size: calc(4*var(--s)) calc(4*var(--s))
+}
