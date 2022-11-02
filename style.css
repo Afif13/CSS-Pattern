@@ -707,3 +707,18 @@ section:nth-of-type(39) {
     repeating-linear-gradient(135deg,#000 0 12.5%,#fff 0 25%);
   background-size: calc(4*var(--s)) calc(4*var(--s))
 }
+section:nth-of-type(40) {
+  --s: 100px; /* control the size */
+  --c1: #668284;
+  --c2: #B6D8C0;
+  --c3: #B9D7D9;
+  
+  --_g: #0000, var(--c1) 1deg 30deg,var(--c2) 31deg 89deg,var(--c1) 90deg 119deg,#0000 120deg;
+  background:
+    conic-gradient(from -60deg at 50% 28.86%,var(--_g)),
+    conic-gradient(from  30deg at 71.14% 50%,var(--_g)),
+    conic-gradient(from 120deg at 50% 71.14%,var(--_g)),
+    conic-gradient(from 210deg at 28.86% 50%,var(--_g))
+    var(--c3);
+  background-size: var(--s) var(--s);
+}
