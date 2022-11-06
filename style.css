@@ -735,3 +735,17 @@ section:nth-of-type(41) {
     #987F69;
   background-size: var(--s) var(--s);
 }
+section:nth-of-type(42) {
+  --s: 76px; /* control the size */
+  --c1: #F77825;
+  --c2: #60B99A;
+  --c3: #F1EFA5;
+  --c4: #554236;
+  
+  background:
+    conic-gradient(from 150deg,var(--c1)    60deg,#0000 0 180deg,
+                               var(--c2) 0 240deg,#0000 0) var(--s) 0,
+    conic-gradient(from -30deg,var(--c1)    60deg,var(--c3) 0 120deg,var(--c4) 0 180deg,
+                               var(--c2) 0 240deg,var(--c3) 0 300deg,var(--c4) 0);
+  background-size: calc(2*var(--s)) var(--s);
+}
