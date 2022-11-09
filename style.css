@@ -101,6 +101,7 @@ pre {
     overflow: auto;
     box-shadow: 0 0.125rem 1rem rgb(27 40 50 / 4%), 0 0.125rem 2rem rgb(27 40 50 / 8%), 0 0 0 0.0625rem rgb(27 40 50 / 2%);
     opacity: .85;
+    margin: 1em;
 }
 pre:hover {
     opacity: 1;
@@ -109,7 +110,7 @@ pre>code {
     display: inline-block;
     padding: 1rem;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.4;
     cursor: text;
     background: #edf0f3;
 }
@@ -164,6 +165,10 @@ pre button {
 @media (max-width: 750px) {
   [data-ea-publisher] {
     display: none!important;
+  }
+  pre>code {
+    font-size: 12px;
+    line-height: 1.2;
   }
 }
 
