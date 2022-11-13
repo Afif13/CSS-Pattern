@@ -745,6 +745,22 @@
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
+	  <section>
+      <pre ><code>html {
+  --s: 76px; /* control the size */
+
+  --c: #1a144a;
+  --_g: conic-gradient(var(--c) 25%,#0000 0) 0 0;
+  background:
+    var(--_g)/calc(2*var(--s)) calc(var(--s)/9.5),
+    var(--_g)/calc(var(--s)/9.5) calc(2*var(--s)),
+    repeating-conic-gradient(#0000 0 25%,var(--c) 0 50%) 
+     var(--s) 0 /calc(2*var(--s)) calc(2*var(--s)),
+    radial-gradient(50% 50%,#2eb044 98%,var(--c)) 
+     0 0/var(--s) var(--s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
   	 <a  target="_blank" href="https://twitter.com/ChallengesCss" class="credit">
   		Created by <strong>Temani Afif</strong>
   	</a>
