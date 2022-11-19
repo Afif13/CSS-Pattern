@@ -767,3 +767,15 @@ section:nth-of-type(43) {
     radial-gradient(50% 50%,#2eb044 98%,var(--c)) 
      0 0/var(--s) var(--s);
 }
+section:nth-of-type(44) {
+  --s: 162px; /* control the size */
+  
+  --_g: conic-gradient(from 30deg at 50% 25%,#0000 300deg,#cd2942 0);
+  background:
+    var(--_g) calc(0.2885*var(--s)) calc(7*var(--s)/12),
+    var(--_g) 0 calc(var(--s)/12),
+    conic-gradient(from 120deg at 50% calc(250%/3),#62928c 120deg,#0000 0),
+    repeating-conic-gradient(from 30deg,#0000 0 60deg,#e8cba9 0 120deg),
+    repeating-conic-gradient(#33152e 0 60deg,#62928c 0 120deg,#414352 0 180deg);
+  background-size: calc(0.577*var(--s)) var(--s)
+}
