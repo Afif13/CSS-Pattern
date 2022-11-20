@@ -343,17 +343,16 @@ section:nth-of-type(13) {
 }
 section:nth-of-type(14) {
   --s: 90px; /* control the size */
-  --g: 5px;  /* control the gap */
-
-  --_g1:#0000,#e181c2 /* first  color */ 0.5deg 108deg,#0000 109deg;
-  --_g2:#0000,#fff220 /* second color */ 0.5deg  36deg,#0000  37deg;
+  --d: 5px;  /* control the gap between stars */
+  
+  --_g: #fff220 36deg, #0000 0;   
   background:
-    conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--_g1)),
-    conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--_g1)),
-    conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--_g2)),
-    conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--_g2))
+    conic-gradient(from 162deg at calc(var(--s) * .5)  calc(var(--s) * .68), var(--_g)),
+    conic-gradient(from 18deg  at calc(var(--s) * .19) calc(var(--s) * .59), var(--_g)),
+    conic-gradient(from 306deg at calc(var(--s) * .81) calc(var(--s) * .59), var(--_g)),
     #e181c2;
-  background-size: calc(var(--s) + var(--g)) calc(var(--s) + var(--g));
+  background-position: 0 calc(var(--s) * 0.35);
+  background-size: calc(var(--s) + var(--d)) calc(var(--s) + var(--d));
 }
 section:nth-of-type(15) {
   --c1: #FF847C;
