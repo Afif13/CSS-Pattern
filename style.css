@@ -809,3 +809,15 @@ section:nth-of-type(46) {
    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
      calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);  
 }
+section:nth-of-type(47) {
+  --s: 70px; /* control the size */
+  --c: #6B5344;
+  
+  --_l: #0000 46%,var(--c) 47% 53%,#0000 54%;
+  background:
+    radial-gradient(100% 100% at 100% 100%,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100% at 0    0   ,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100%,#0000 22%,var(--c) 23% 29%, #0000 30% 34%,var(--c) 35% 41%,#0000 42%)
+    #F8ECC9;
+  background-size: calc(var(--s)*2) calc(var(--s)*2);
+}
