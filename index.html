@@ -812,6 +812,21 @@
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
+	  <section>
+      <pre ><code>html {
+  --s: 70px; /* control the size */
+  --c: #6B5344;
+  
+  --_l: #0000 46%,var(--c) 47% 53%,#0000 54%;
+  background:
+    radial-gradient(100% 100% at 100% 100%,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100% at 0    0   ,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100%,#0000 22%,var(--c) 23% 29%, #0000 30% 34%,var(--c) 35% 41%,#0000 42%)
+    #F8ECC9;
+  background-size: calc(var(--s)*2) calc(var(--s)*2);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
   	 <a  target="_blank" href="https://twitter.com/ChallengesCss" class="credit">
   		Created by <strong>Temani Afif</strong>
   	</a>
