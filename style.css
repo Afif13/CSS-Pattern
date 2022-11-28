@@ -19,13 +19,17 @@ body  {
     margin: 0;
     display: grid;
 }
+@media (min-width: 750px) {
+ body {
+   grid-template-columns: 1fr 1fr;      
+ }
+}
 body section {
     display: grid;
-    min-height: 100vh;
+    min-height: 50vh;
     place-content: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    background-attachment: fixed!important;
 }
 h1 {
   font-style: normal;
@@ -88,14 +92,10 @@ body header > * {
 }
 body header h1 + p {
   text-indent: 120px;
-    margin-top: -22px;
-    font-size: 15px;
+  margin-top: -22px;
+  font-size: 15px;
 }
-body footer {
-    grid-column: 1/-1;
-  text-align: center;
-  margin-bottom: 5px;
-}
+
 pre {
     border-radius: 5px;
     overflow: auto;
@@ -108,8 +108,8 @@ pre:hover {
 }
 pre>code {
     display: inline-block;
-    padding: 1rem;
-    font-size: 14px;
+    /*padding: 1rem;*/
+    font-size: 0;
     line-height: 1.4;
     cursor: text;
     background: #edf0f3;
@@ -144,11 +144,12 @@ pre {
   position: relative;
 }
 pre button {
-    position: absolute;
+    /*position: absolute;*/
     right: 8px;
     bottom: 8px;
     border: none;
     font-size: 1rem;
+    padding: .85rem 1.5rem;
     cursor: pointer; 
 }
 
@@ -166,10 +167,10 @@ pre button {
   [data-ea-publisher] {
     display: none!important;
   }
-  pre>code {
+  /*pre>code {
     font-size: 12px;
     line-height: 1.2;
-  }
+  }*/
 }
 
 /* the gradients */
