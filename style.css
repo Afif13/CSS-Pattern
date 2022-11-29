@@ -31,6 +31,9 @@ body section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+section:nth-child(even):last-of-type {
+    grid-column: 1/-1;
+}
 h1 {
   font-style: normal;
     font-weight: 700;
