@@ -893,4 +893,12 @@ section:nth-of-type(51) {
     linear-gradient(90deg,#88A65E 50%,#BFB35A 0);
   background-size: var(--_s) calc(4*var(--s));
 }
-
+section:nth-of-type(52) { 
+  --_g: #036564 35%, #0000 36%;
+  background: 
+	  radial-gradient(at 100% 100%, var(--_g)),
+	  radial-gradient(at 0    0   , var(--_g))
+    #E8DDCB;
+  background-size: 4em 4em;
+  /* 35% = 100%/(2*sqrt(2)) */
+}
