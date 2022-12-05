@@ -876,4 +876,21 @@ section:nth-of-type(50) {
     conic-gradient(from 90deg at var(--t) var(--t),var(--c2) 25%,var(--c1) 0) 
     calc((var(--s) - var(--t))/2) calc((var(--s) - var(--t))/2)/var(--s) calc(5*var(--s)/4);
 }
+section:nth-of-type(51) {
+  --s: 55px; /* control the size */
+  --b: 15px; /* control the thickness of the curved lines */
+  
+  --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
+  --_f: calc(99.5% - var(--b)),#F9F2E7 calc(101% - var(--b)) 99.5%,#0000 101%;
+  --_g0: calc(-.8*var(--s)), #88A65E var(--_f);
+  --_g1: calc(-.8*var(--s)), #BFB35A var(--_f);
+  --_s: calc(1.8*var(--s) + var(--b));
+  background: 
+    radial-gradient(var(--_r) right var(--_g0)) calc(-1*var(--_s)) var(--s),
+    radial-gradient(var(--_r) left  var(--_g1))         var(--_s)  calc(-1*var(--s)),
+    radial-gradient(var(--_r) right var(--_g1)) calc(var(--_s)/-2) calc(-1*var(--s)),
+    radial-gradient(var(--_r) left  var(--_g0)) calc(var(--_s)/ 2) var(--s),
+    linear-gradient(90deg,#88A65E 50%,#BFB35A 0);
+  background-size: var(--_s) calc(4*var(--s));
+}
 
