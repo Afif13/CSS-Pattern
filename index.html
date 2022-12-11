@@ -968,6 +968,21 @@
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
+	  <section>
+      <pre ><code>html {
+  --s: 50px; /* control the size */
+  
+  --c: #CFF09E;
+  --_g: radial-gradient(#0B486B 49%,#0000 50%);
+  background:
+   var(--_g) calc(var(--s)/-2) calc(var(--s)/2),
+   repeating-conic-gradient(from 45deg,var(--c) 0 25%,#0000 0 50%)
+     calc(var(--s)/2) calc(var(--s)/2),
+   var(--_g),var(--_g) var(--s) var(--s) var(--c);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		Created by <strong>Temani Afif</strong>
   	</a>
