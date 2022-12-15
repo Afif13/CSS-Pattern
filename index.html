@@ -1003,6 +1003,26 @@
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
+	  <section>
+      <pre ><code>html {
+  --s: 48px; /* control the size */
+  --b: 18px; /* control the thickness of the wavy line */
+  
+  --_r: calc(1.28*var(--s) + var(--b)/2) at left 50%;
+  --_f: calc(100% - var(--b)),#d8d8d8 calc(101% - var(--b)) 100%,#0000 101%;
+  --g0: calc(-.8*var(--s)),#bb2528 var(--_f);
+  --g1: calc(-.8*var(--s)),#146b3a var(--_f);
+  --_s: calc(1.5*var(--s) + var(--b));
+  background: 
+    radial-gradient(var(--_r) bottom var(--g0)) calc(2*var(--s)) calc(-1*var(--_s)),
+    radial-gradient(var(--_r) bottom var(--g1)) calc(-1*var(--s)) calc(var(--_s)/-2),
+    radial-gradient(var(--_r) top    var(--g1)) 0 var(--_s),
+    radial-gradient(var(--_r) top    var(--g0)) var(--s) calc(var(--_s)/ 2),
+    linear-gradient(#bb2528 50%,#146b3a 0);
+  background-size: calc(4*var(--s)) var(--_s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		Created by <strong>Temani Afif</strong>
   	</a>
