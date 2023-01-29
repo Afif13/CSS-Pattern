@@ -1034,3 +1034,20 @@ section:nth-of-type(61) {
     repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
   background-size: calc(4*var(--s)) calc(4*var(--s));
 }
+section:nth-of-type(62) {
+  --s: 71px; /* control the size */
+  --c1: #78C0A8;
+  --c2: #FCEBB6;
+  
+  background:
+    radial-gradient(36% 72% at 25% -50%,var(--c2) 98%,#0000)
+     0 0/calc(2*var(--s)) var(--s),
+    radial-gradient(36% 72% at 75% 150%,var(--c2) 98%,#0000)
+     0 0/calc(2*var(--s)) var(--s),
+    radial-gradient(72% 36% at 150% 25%,var(--c2) 98%,#0000)
+     0 0/var(--s) calc(2*var(--s)),
+    radial-gradient(72% 36% at -50% 75%,var(--c2) 98%,#0000)
+     0 0/var(--s) calc(2*var(--s)),
+    repeating-conic-gradient(var(--c2) 0 45deg,var(--c1) 0 25%)
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+}
