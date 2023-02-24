@@ -1161,8 +1161,26 @@
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
+	  <section>
+      <pre ><code>html {
+  --s: 100px; /* control the size */
+  --c1: #E1F5C4;
+  --c2: #3B8183;
+  
+  --_g:#0000, #0004 5%,
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,
+     var(--c2) 86% 94%,#0004 95%,#0000;
+  background:
+    radial-gradient(100% 50% at 100% 0   ,var(--_g)),
+    radial-gradient(100% 50% at 0    50% ,var(--_g)),
+    radial-gradient(100% 50% at 100% 100%,var(--_g));
+  background-size: var(--s) calc(2*var(--s));
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
-  		Created by <strong>Temani Afif</strong>
+  		by <strong>Temani Afif</strong>
   	</a>
   	<a href="https://www.buymeacoffee.com/afif" target="_blank" id="bmc-wbtn" style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgb(8, 118, 155); border-radius: 32px; position: fixed; left: 15px; bottom: 15px; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; transition: all 0.2s ease 0s; transform: scale(1);"><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee" style="height: 40px; width: 40px;"></a>
 
