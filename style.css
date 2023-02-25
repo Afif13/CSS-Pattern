@@ -1117,3 +1117,11 @@ section:nth-of-type(66) {
     radial-gradient(100% 50% at 100% 100%,var(--_g));
   background-size: var(--s) calc(2*var(--s));
 }
+section:nth-of-type(67) {
+  --s: 100px; /* control the size */
+  
+  background:
+    conic-gradient(#0000 75%,#CFF09E 0) 0 calc(var(--s)/4),
+    conic-gradient(from 45deg,#CFF09E 25%,#3B8686 0);
+  background-size: var(--s) var(--s);
+}
