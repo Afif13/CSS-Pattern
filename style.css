@@ -1125,3 +1125,11 @@ section:nth-of-type(67) {
     conic-gradient(from 45deg,#CFF09E 25%,#3B8686 0);
   background-size: var(--s) var(--s);
 }
+section:nth-of-type(68) {
+  --s: 100px; /* control the size */
+  
+  background:
+    conic-gradient(#7A6A53   135deg,#D9CEB2 0 270deg,
+                   #7A6A53 0 315deg,#D9CEB2 0)
+    0/var(--s) var(--s);
+}
