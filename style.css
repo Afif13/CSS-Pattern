@@ -1133,3 +1133,16 @@ section:nth-of-type(68) {
                    #7A6A53 0 315deg,#D9CEB2 0)
     0/var(--s) var(--s);
 }
+section:nth-of-type(69) {
+  --s: 66px;
+  --c: #413E4A /* 1st color */ 25%;
+  
+  background: 
+    conic-gradient(from -45deg at 75% 12.5%,var(--c),#0000 0),
+    conic-gradient(from 135deg at 25% 87.5%,var(--c),#0000 0) 
+     0 calc(var(--s)/2),
+    conic-gradient(from 180deg at 50% 75%,#0000 62.5%,var(--c)),
+    conic-gradient(            at 50% 25%,#0000 62.5%,var(--c)) 
+     0 calc(var(--s)/2) #B38184 /* 2nd color */;
+  background-size: var(--s) calc(2*var(--s));
+}
