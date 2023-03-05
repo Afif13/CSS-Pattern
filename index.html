@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.68">
+    <link rel="stylesheet" href="style.css?v=0.69">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -1198,6 +1198,22 @@
     conic-gradient(#7A6A53   135deg,#D9CEB2 0 270deg,
                    #7A6A53 0 315deg,#D9CEB2 0)
     0/var(--s) var(--s);
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 66px;
+  --c: #413E4A /* 1st color */ 25%;
+  
+  background: 
+    conic-gradient(from -45deg at 75% 12.5%,var(--c),#0000 0),
+    conic-gradient(from 135deg at 25% 87.5%,var(--c),#0000 0) 
+     0 calc(var(--s)/2),
+    conic-gradient(from 180deg at 50% 75%,#0000 62.5%,var(--c)),
+    conic-gradient(            at 50% 25%,#0000 62.5%,var(--c)) 
+     0 calc(var(--s)/2) #B38184 /* 2nd color */;
+  background-size: var(--s) calc(2*var(--s));
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
