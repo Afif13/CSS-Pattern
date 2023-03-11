@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.69">
+    <link rel="stylesheet" href="style.css?v=0.70">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -1214,6 +1214,29 @@
     conic-gradient(            at 50% 25%,#0000 62.5%,var(--c)) 
      0 calc(var(--s)/2) #B38184 /* 2nd color */;
   background-size: var(--s) calc(2*var(--s));
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 36px; /* control the size */
+  --c1: #000;
+  --c2: #d2d3d5;
+  --c3: #727c7e;
+  
+  --g1: conic-gradient(at calc(250%/3) calc(50%/3),var(--c2) 60deg,#0000 0 300deg,var(--c1) 0);
+  --g2: conic-gradient(at calc(50%/3) 50%,#0000 75%,var(--c1) 0);
+  --g3: conic-gradient(at calc(100%/3) 50%,#0000 75%,var(--c2) 0);
+  --g4: conic-gradient(from 59deg at calc(200%/3) calc(249%/9),var(--c3) 61deg,#0000 62deg);
+  --g5: conic-gradient(from 60deg at 50% calc(250%/3),#f1f1f1 /*4th color*/ 60deg,var(--c1) 0 120deg,#0000 0);
+  --_p: calc(9*tan(30deg)*var(--s)); /* if you don't see the pattern replace tan(30deg) with 0.577 */
+  background:
+    var(--g1) calc(-1*var(--s)) 0,var(--g1) calc(2*var(--s)) var(--_p),
+    var(--g2),var(--g2) calc(3*var(--s)) var(--_p),
+    var(--g3),var(--g3) calc(3*var(--s)) var(--_p),
+    var(--g4),var(--g4) calc(3*var(--s)) var(--_p),
+    var(--g5) calc(3*var(--s)) 0,var(--g5) 0 var(--_p) var(--c3);
+  background-size: calc(6*var(--s)) calc(2*var(--_p))
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
