@@ -1166,3 +1166,18 @@ section:nth-of-type(70) {
     var(--g5) calc(3*var(--s)) 0,var(--g5) 0 var(--_p) var(--c3);
   background-size: calc(6*var(--s)) calc(2*var(--_p))
 }
+section:nth-of-type(71) {
+  --s: 220px; /* control the size */
+  --c1: #774F38;
+  --c2: #F1D4AF;
+  
+  --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+  --_c:,#0000 75%,var(--c2) 0;
+  background:
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+    conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+    conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+    conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+  background-size: var(--s) var(--s);
+}
