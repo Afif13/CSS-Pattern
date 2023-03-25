@@ -1200,3 +1200,13 @@ section:nth-of-type(72) {
     repeating-linear-gradient(-45deg,var(--c1) -3.125% 3.125%,var(--c2) 0 9.375%);
   background-size: calc(2*var(--s)) calc(2*var(--s));
 }
+section:nth-of-type(73) {
+  --s: 70px; /* control the size */
+  
+  --_g:,#0000 75%,#F67280 0;
+  background:
+    linear-gradient(-45deg var(--_g)),
+    linear-gradient( 45deg var(--_g)) 
+     0 calc(var(--s)/2) #355C7D;
+  background-size: var(--s) var(--s);
+}
