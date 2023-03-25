@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.72">
+    <link rel="stylesheet" href="style.css?v=0.73">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -1277,6 +1277,19 @@
     linear-gradient(225deg,var(--g)) calc(var(--s)/2) var(--s),
     repeating-linear-gradient(-45deg,var(--c1) -3.125% 3.125%,var(--c2) 0 9.375%);
   background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+</code><button>Copy the CSS</button></pre>  
+    </section>
+	  <section>
+      <pre ><code>html {
+  --s: 70px; /* control the size */
+  
+  --_g:,#0000 75%,#F67280 0;
+  background:
+    linear-gradient(-45deg var(--_g)),
+    linear-gradient( 45deg var(--_g)) 
+     0 calc(var(--s)/2) #355C7D;
+  background-size: var(--s) var(--s);
 }
 </code><button>Copy the CSS</button></pre>  
     </section>
