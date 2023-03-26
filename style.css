@@ -1210,3 +1210,16 @@ section:nth-of-type(73) {
      0 calc(var(--s)/2) #355C7D;
   background-size: var(--s) var(--s);
 }
+section:nth-of-type(74) {
+  --s: 50px;  /* control the size */
+  --c1: #5E412F;
+  --c2: #FCEBB6;
+  
+  background:
+    radial-gradient(25% 50%,var(--c1) 98%,#0000)
+     var(--s) 0/calc(2*var(--s)) var(--s),
+    radial-gradient(25% 50%,var(--c2) 98%,#0000)
+     0 0/calc(2*var(--s)) var(--s),
+    repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+}
