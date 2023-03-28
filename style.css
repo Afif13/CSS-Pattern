@@ -1223,3 +1223,8 @@ section:nth-of-type(74) {
     repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
      0 0/calc(2*var(--s)) calc(2*var(--s));
 }
+section:nth-of-type(75) {
+  background:
+    repeating-conic-gradient(#F2E9E1 0 45deg,#99B2B7 0 90deg)
+    0 0/100px 100px;
+}
