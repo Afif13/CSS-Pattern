@@ -1228,3 +1228,17 @@ section:nth-of-type(75) {
     repeating-conic-gradient(#F2E9E1 0 45deg,#99B2B7 0 90deg)
     0 0/100px 100px;
 }
+section:nth-of-type(76) {
+  --s: 50px; /* control the size */
+  --c1: #D9CEB2;
+  --c2: #948C75;
+  
+  --_g: calc(2*var(--s)) calc(2*var(--s)) 
+    radial-gradient(25% 25%,var(--c1) 99%,#0000 101%);
+  background:
+    0 var(--s)/var(--_g),var(--s) 0/var(--_g),
+    radial-gradient(50% 50%,var(--c2) 97%,#0000)
+     calc(var(--s)/2) calc(var(--s)/2)/var(--s) var(--s),
+    linear-gradient(90deg,var(--c1) 50%,var(--c2) 0) 
+     0 0/calc(2*var(--s));
+}
