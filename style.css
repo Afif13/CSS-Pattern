@@ -1242,3 +1242,14 @@ section:nth-of-type(76) {
     linear-gradient(90deg,var(--c1) 50%,var(--c2) 0) 
      0 0/calc(2*var(--s));
 }
+section:nth-of-type(77) {
+  --s: 100px; /* control the size */
+  --c1: #5A3D31;
+  --c2: #E5EDB8;
+  
+  background:
+    radial-gradient(#0000 50%,var(--c1) 52% 55%,var(--c2) 57%)
+    0 0/var(--s) var(--s),
+    repeating-linear-gradient(45deg,var(--c1) 0 25%,var(--c2) 0 50%)
+    0 0/calc(2*var(--s)) calc(2*var(--s))
+}
