@@ -1,17 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
-
-html {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #415462;
-    font-family: system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-*,
-*:before,
-*:after{
-  box-sizing:border-box;
-}
 html {
     scroll-snap-type: y mandatory;
 }
