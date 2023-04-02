@@ -1249,3 +1249,16 @@ section:nth-of-type(77) {
     repeating-linear-gradient(45deg,var(--c1) 0 25%,var(--c2) 0 50%)
     0 0/calc(2*var(--s)) calc(2*var(--s))
 }
+section:nth-of-type(78) {
+  --s: 84px; /* control the size */
+  
+  --c: #fff;
+  --a:from -30deg at;
+  background:
+    linear-gradient(#0000 50%,#0004 0),
+    conic-gradient(var(--a) 90%,var(--c) 240deg,#0000    0),
+    conic-gradient(var(--a) 75%,#71e9a0  240deg,#0000    0),
+    conic-gradient(var(--a) 25%,#0000    240deg,var(--c) 0),
+    conic-gradient(var(--a) 40%,var(--c) 240deg,#2a6a9b  0);
+  background-size: calc(1.5*var(--s)) var(--s);
+}
