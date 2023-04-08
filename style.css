@@ -1272,3 +1272,14 @@ section:nth-of-type(79) {
     repeating-conic-gradient(from 90deg,var(--c))
     0/calc(3*var(--s)) calc(3*var(--s))
 }
+section:nth-of-type(80) {
+  --s: 100px; /* control the size */
+  
+  --c:#0000 0 25%,#EEDD99 0 50%;
+  background:
+    repeating-conic-gradient(from -45deg at 75% 37.5%,var(--c)),
+    conic-gradient(#BBBB88 50%,#0000 0),
+    repeating-conic-gradient(from  45deg at 25% 87.5%,var(--c))
+    #BBBB88;
+  background-size: var(--s) calc(2*var(--s))
+}
