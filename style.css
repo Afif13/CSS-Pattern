@@ -1283,3 +1283,16 @@ section:nth-of-type(80) {
     #BBBB88;
   background-size: var(--s) calc(2*var(--s))
 }
+section:nth-of-type(81) {
+  --s: 124px; /* control the size */
+  
+  
+  --g: #90c0b2 0 25%,#f9fbef 0 50%,#0000 0;
+  background:
+    conic-gradient(from 135deg at 25% 75%,var(--g))
+     calc(var(--s)/4) calc(var(--s)/-4),
+    conic-gradient(from -45deg at 75% 25%,var(--g))
+     calc(var(--s)/-4) calc(var(--s)/4),
+    repeating-conic-gradient(var(--g));
+  background-size: var(--s) var(--s)
+}

@@ -22,7 +22,7 @@
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="800" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=0.78">
+    <link rel="stylesheet" href="style.css?v=0.80">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVMK530JFV"></script>
 <script>
@@ -1389,7 +1389,22 @@
     #BBBB88;
   background-size: var(--s) calc(2*var(--s))
 }
-
+</code><button>Copy the CSS</button></pre>  
+    </section>
+    <section>
+      <pre ><code>html {
+  --s: 124px; /* control the size */
+  
+  
+  --g: #90c0b2 0 25%,#f9fbef 0 50%,#0000 0;
+  background:
+    conic-gradient(from 135deg at 25% 75%,var(--g))
+     calc(var(--s)/4) calc(var(--s)/-4),
+    conic-gradient(from -45deg at 75% 25%,var(--g))
+     calc(var(--s)/-4) calc(var(--s)/4),
+    repeating-conic-gradient(var(--g));
+  background-size: var(--s) var(--s)
+}
 </code><button>Copy the CSS</button></pre>  
     </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
