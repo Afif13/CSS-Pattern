@@ -1429,10 +1429,10 @@
     <section id="g83">
       <style>#g83 {
   --s: 29px; /* control the size */
-  --b: calc(var(--s)/3); /* adjust the "3" to control the thickness*/
+  --b: 3; /* control the thickness*/
   
-  --g:#0000 calc(100% - var(--b) - 1px),#615375 /* 1st color*/ 
-      calc(100% - var(--b)) calc(100% - 1px),#0000;
+  --g:#0000 calc(100% - var(--s)/var(--b) - 1px),#615375 /* 1st color*/ 
+      calc(100% - var(--s)/var(--b)) calc(100% - 1px),#0000;
   --r:calc(2.414*var(--s));
   --p:calc(1.414*var(--s));
   background:
