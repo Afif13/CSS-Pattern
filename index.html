@@ -1426,6 +1426,49 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g83">
+      <style>#g83 {
+  --s: 29px; /* control the size */
+  --b: calc(var(--s)/3); /* adjust the "3" to control the thickness*/
+  
+  --g:#0000 calc(100% - var(--b) - 1px),#615375 /* 1st color*/ 
+      calc(100% - var(--b)) calc(100% - 1px),#0000;
+  --r:calc(2.414*var(--s));
+  --p:calc(1.414*var(--s));
+  background:
+    radial-gradient(var(--r) at 0    0   ,var(--g)) var(--r) var(--r),
+    radial-gradient(var(--s) at 0    0   ,var(--g)) var(--p) var(--p),
+    radial-gradient(var(--r) at 0    100%,var(--g)) 0 var(--p),
+    radial-gradient(var(--s) at 0    100%,var(--g)) calc(-1*var(--s)) var(--r),
+    radial-gradient(var(--r) at 100% 0   ,var(--g)) var(--p) 0,
+    radial-gradient(var(--s) at 100% 0   ,var(--g)) var(--r) calc(-1*var(--s)),
+    radial-gradient(var(--r) at 100% 100%,var(--g)) calc(-1*var(--s)) calc(-1*var(--s)),
+    radial-gradient(var(--s) at 100% 100%,var(--g)) #8EB2C5 /* 2nd color */;  
+  background-size: calc(2*var(--r)) calc(2*var(--r));
+}
+</style><button>Copy the CSS</button>  
+    </section>
+    <section id="g84">
+      <style>#g84 {
+  --s: 29px; /* control the size */
+  
+  --c:#FFE545 /* 1st color*/ calc(100% - 2px),#0000;
+  --r:calc(2.414*var(--s));
+  --p:calc(1.414*var(--s));
+  --g:radial-gradient(var(--s),var(--c));
+  background:
+    radial-gradient(var(--r) at 0    0   ,var(--c)),
+    radial-gradient(var(--r) at 0    100%,var(--c)),
+    radial-gradient(var(--r) at 100% 0   ,var(--c)),
+    radial-gradient(var(--r) at 100% 100%,var(--c)),
+    var(--g),var(--g),var(--g),var(--g) #C2A34F /* 2nd color */;
+  background-position: 
+    var(--r) var(--r),0 var(--p),var(--p) 0,
+    calc(-1*var(--s)) calc(-1*var(--s));
+  background-size: calc(2*var(--r)) calc(2*var(--r));
+}
+</style><button>Copy the CSS</button>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		by <strong>Temani Afif</strong>
   	</a>
