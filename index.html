@@ -1469,6 +1469,24 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g85">
+      <style>#g85 {
+  --s: 160px; /* control the size */
+  --c1: #A14016;
+  --c2: #CFC89A;
+  
+  --_g: var(--s) var(--s) 
+    radial-gradient(var(--c1) 17%,var(--c2) 18% 35%,#0000 36.5%);
+  background: 
+    calc(var(--s)/-4) calc(var(--s)/-4)/var(--_g),
+    calc(var(--s)/ 4) calc(var(--s)/ 4)/var(--_g),
+    radial-gradient(var(--c2) 34%,var(--c1) 36% 68%,#0000 70%) 
+     0 0/calc(var(--s)/2) calc(var(--s)/2),
+    repeating-linear-gradient(45deg,var(--c1) -12.5% 12.5%,var(--c2) 0 37.5%)
+     0 0/var(--s) var(--s);
+}
+</style><button>Copy the CSS</button>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		by <strong>Temani Afif</strong>
   	</a>
