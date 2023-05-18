@@ -1693,6 +1693,20 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g99">
+      <style>#g99 {
+  --s: 86px; /* control the size */
+  --a: 60deg; /* control the angle */
+  
+  --g:#0000 45%,#88ABC2 46% 54%,#0000 55%;
+  background:
+    linear-gradient(        var(--a), var(--g)),
+    linear-gradient(calc(-1*var(--a)),var(--g))
+    #FAD3B2;
+  background-size: var(--s) calc(tan(var(--a))*var(--s))
+}
+</style><button>Copy the CSS</button>  
+    </section>
   	 <a  target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		by <strong>Temani Afif</strong>
   	</a>
