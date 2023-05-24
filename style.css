@@ -21,7 +21,7 @@ body section {
   min-height: 50vh;
   place-content: center;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
   flex: 50%;
 }
 @media (max-width: 750px) {
