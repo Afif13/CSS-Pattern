@@ -133,7 +133,7 @@ a.tweet {
   height: 52px;
   position: fixed;
   left: 15px;
-  bottom: 80px;
+  bottom: 124px;
   box-shadow: rgb(0 0 0 / 40%) 0px 4px 8px;
 }
 .credit {
@@ -152,7 +152,7 @@ a.tweet {
 #bmc-wbtn {
   position: fixed; 
   left: 15px; 
-  bottom: 15px; 
+  bottom: 60px; 
   display: flex; 
   align-items: center; 
   justify-content: center; 
@@ -165,20 +165,4 @@ a.tweet {
 #bmc-wbtn img {
   height: 40px; 
   width: 40px;
-}
-
-[data-ea-publisher] {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 999;
-}
-[data-ea-publisher].loaded .ea-content, 
-[data-ea-type].loaded .ea-content {
-  background: rgb(255 255 255 / 80%)!important;
-}
-@media (max-width: 750px) {
-  [data-ea-publisher] {
-    display: none!important;
-  }
 }
