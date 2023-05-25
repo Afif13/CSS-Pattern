@@ -6,6 +6,9 @@ html {
   font-family: system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";	
   scroll-snap-type: y mandatory;
 }
+html:has(section:target) {
+  scroll-snap-type: none;
+}
 *,
 *:before,
 *:after{
@@ -21,7 +24,6 @@ body section {
   min-height: 50vh;
   place-content: center;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   flex: 50%;
 }
 @media (max-width: 750px) {
@@ -32,6 +34,9 @@ body section {
 body section:target {
  min-height: 100vh;
  flex: 100%;
+}
+html:has(section:target) section:not(:target) {
+  display: none;
 }
 h1 {
   font-style: normal;
@@ -86,8 +91,10 @@ body header {
   position: absolute;
   z-index: 9;
   inset: 0 0 auto;
-  background: linear-gradient(#fffe 55%,#0000);
-  padding-bottom: 90px;
+  background: #fffe;
+  box-shadow: 0 0 20px 30px #fffe;
+  margin: auto;
+  width: fit-content;
 }
 body header > * {
   margin: 5px;
@@ -97,7 +104,6 @@ body header h1 + p {
   margin-top: -22px;
   font-size: 15px;
 }
-
 section button {
   border-radius: 5px;
   box-shadow: 0 0.125rem 1rem rgb(27 40 50 / 4%), 0 0.125rem 2rem rgb(27 40 50 / 8%), 0 0 0 0.0625rem rgb(27 40 50 / 2%);
