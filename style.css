@@ -49,7 +49,6 @@ h1 {
   color: #505050;
   white-space: nowrap;
 }
-
 h1 span {
   font-size: 70px;
   vertical-align: middle;
@@ -147,7 +146,7 @@ a.tweet {
   color: #fff;
   box-shadow: 0 0 0 50px #08769b;
   clip-path: inset(0 -100%);
-  text-decoration:none ;
+  text-decoration:none;
 }
 #bmc-wbtn {
   position: fixed; 
