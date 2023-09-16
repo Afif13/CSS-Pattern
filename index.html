@@ -2017,6 +2017,26 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g118">
+      <style>#g118 {
+  --s: 85px; /* control the size */
+  --c1:#339194 0;
+  --c2:#F6D86B 0;
+  
+  --g1:conic-gradient(from  45deg at 62.5% 12.5%,#0000 75%,var(--c1));
+  --g2:conic-gradient(from -45deg at 12.5% 12.5%,#0000 75%,var(--c1));
+  --g3:conic-gradient(from 225deg at 87.5% 87.5%,#0000 75%,var(--c2));
+  --g4:conic-gradient(from 135deg at 87.5% 37.5%,#0000 75%,var(--c2));
+  background:
+    var(--g4),var(--g4) var(--s) var(--s),
+    var(--g3),var(--g3) var(--s) var(--s),
+    var(--g2),var(--g2) var(--s) var(--s),
+    var(--g1),var(--g1) var(--s) var(--s),
+    repeating-linear-gradient(135deg,var(--c2) 12.5%,var(--c1) 25%);
+  background-size: calc(2*var(--s)) calc(2*var(--s))
+}
+</style><button>Copy the CSS</button>  
+    </section>
   	 <a target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		by <strong>Temani Afif</strong>
   	</a>
