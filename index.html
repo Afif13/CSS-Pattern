@@ -2107,6 +2107,30 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g123">
+      <style>#g123 {
+  --s: 30px; /* control the size */
+  --c: #1B676B 25%,#0000 0; /* first color */
+  
+  --_s:/calc(6*var(--s)) calc(6*var(--s));
+  --g1:var(--_s) conic-gradient(from  45deg at     calc(250%/3),var(--c));
+  --g2:var(--_s) conic-gradient(from 135deg at 50% calc(250%/3),var(--c));
+  --g3:var(--_s) conic-gradient(from 225deg at     calc(50%/3) ,var(--c));
+  --g4:var(--_s) conic-gradient(from -45deg at 50% calc(50%/3) ,var(--c));
+  background:
+    calc(2*var(--s)) calc(5*var(--s)) var(--g4),
+    calc(5*var(--s)) calc(2*var(--s)) var(--g4),
+    0                calc(4*var(--s)) var(--g3),
+    calc(3*var(--s)) var(--s)         var(--g3),
+    calc(2*var(--s)) calc(3*var(--s)) var(--g2),
+    calc(5*var(--s)) 0                var(--g2),
+    var(--s)         var(--s)         var(--g1),
+    calc(4*var(--s)) calc(4*var(--s)) var(--g1),
+    conic-gradient(at calc(100%/3) calc(200%/3),var(--c))
+     0 0/calc(3*var(--s)) calc(3*var(--s)) #88C425; /* second color */
+}
+</style><button>Copy the CSS</button>  
+    </section>
   	 <a target="_blank" href="https://github.com/Afif13/CSS-Pattern" class="credit">
   		by <strong>Temani Afif</strong>
   	</a>
