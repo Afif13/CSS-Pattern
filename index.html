@@ -2244,6 +2244,27 @@
 }
 </style><button>Copy the CSS</button>  
     </section>
+    <section id="g130">
+      <style>#g130 {
+  --s: 50px; /* control the size */
+  
+  --c:#0000 75%,#F8E4C1 0;
+  --g1:conic-gradient(at 78% 3%,var(--c));
+  --g2:conic-gradient(at 3% 78%,var(--c));
+  background:
+    var(--g1),
+    var(--g1) var(--s) var(--s),
+    var(--g1) calc(2*var(--s)) calc(2*var(--s)),
+    var(--g1) calc(3*var(--s)) calc(3*var(--s)),
+    var(--g2) 0 calc(3*var(--s)),
+    var(--g2) var(--s) 0,
+    var(--g2) calc(2*var(--s)) var(--s),
+    var(--g2) calc(3*var(--s)) calc(2*var(--s))
+    #2B4E72;
+  background-size: calc(4*var(--s)) calc(4*var(--s));
+}
+</style><button>Copy the CSS</button>  
+    </section>
     <section>
         <div>
             <p>You reached the end but it's not the end!<br>This collection will keep growing</p>
