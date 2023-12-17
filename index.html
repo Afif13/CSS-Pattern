@@ -27,7 +27,7 @@
   		<h1><span>C</span><span>S</span><span>S</span> Pattern</h1>
   		<p>powered by CSS gradients</p>
         <h2>the biggest collection of background Patterns</h2>
-        <p>Explore 132 CSS-only patterns made with CSS gradients and optimized with CSS variables.</p>
+        <p>Explore 133 CSS-only patterns made with CSS gradients and optimized with CSS variables.</p>
   	</header>
     <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
     <div class="adaptive" data-ea-publisher="css-challengescom" id="css-pattern" data-ea-type="text" data-ea-style="fixedfooter"></div>
@@ -2299,6 +2299,20 @@
     radial-gradient(var(--r)75% 75%,var(--l)),
     radial-gradient(var(--r)25% 25%,var(--l)) var(--c2);
   background-size: var(--s) var(--s)
+}
+</style><button>Copy the CSS</button>  
+    </section>
+    <section id="g133">
+      <style>#g133 {
+  --s: 96px; /* control the size */
+  
+  --g:#000 0 25%,#fff 0 50%;
+  background:
+    repeating-conic-gradient(from 45deg,var(--g)) 
+     0 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--g)) 
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+  background-blend-mode: difference;
 }
 </style><button>Copy the CSS</button>  
     </section>
