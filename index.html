@@ -27,7 +27,7 @@
   		<h1><span>C</span><span>S</span><span>S</span> Pattern</h1>
   		<p>powered by CSS gradients</p>
         <h2>the biggest collection of background Patterns</h2>
-        <p>Explore 140 CSS-only patterns made with CSS gradients and optimized with CSS variables.<br> I also have <a href="https://animated.css-pattern.com/" target="_blank">a collection of animated CSS Patterns</a></p>
+        <p>Explore 141 CSS-only patterns made with CSS gradients and optimized with CSS variables.<br> I also have <a href="https://animated.css-pattern.com/" target="_blank">a collection of animated CSS Patterns</a></p>
   	</header>
     <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
     <div class="adaptive" data-ea-publisher="css-challengescom" id="css-pattern" data-ea-type="text" data-ea-style="fixedfooter"></div>
@@ -2421,6 +2421,21 @@
       var(--c1) 0 calc(20%/3),#0000 0 calc(70%/3),
       var(--c1) 0 30%,#0000 0 50%) calc(var(--s)/-5) 0 var(--c2);
   background-size: calc(3*var(--s)) calc(5*var(--s)/2);
+}
+</style><button>Copy the CSS</button>  
+    </section>
+    <section id="g141">
+      <style>#g141 {
+  --s: 100px; /* control the size */
+  --c: #D3643B;
+  
+  --g:#333333 0 10%,#0000 0 50%;
+  background:
+    linear-gradient(45deg,#0000 5%,var(--c) 0 45%,#0000 0) 
+      0 calc(-.1*var(--s)),
+    repeating-linear-gradient( 45deg,var(--g)),
+    repeating-linear-gradient(-45deg,var(--g)) var(--c);
+  background-size: var(--s) var(--s);
 }
 </style><button>Copy the CSS</button>  
     </section>
