@@ -2482,18 +2482,17 @@
     <section id="g145">
       <style>#g145 {
   --s: 90px; /* control the size */
-  --c1: #ECF081;
-  --c2: #AB3E5B;
+  --c1:#ECF081;
+  --c2:#AB3E5B;
   
-  --g:/calc(2*var(--s)) calc(2*var(--s)) 
-    conic-gradient(at 18.75% 18.75%,#0000 75%,var(--c2) 0);
   background:
+    conic-gradient(at 25% 75%,#0000 25%,var(--c1) 0)
+     calc(var(--s)/-8) calc(var(--s)/8)/var(--s) var(--s),
     radial-gradient(50% 50%,var(--c1) 24%,var(--c2) 26% 74%,#0000 76%) 
      0 0/var(--s) var(--s),
-    calc(  var(--s)/8) calc(  var(--s)/8) var(--g),
-    calc(3*var(--s)/2) calc(  var(--s)/8) var(--g),
-    calc(  var(--s)/8) calc(3*var(--s)/2) var(--g),
-    calc(3*var(--s)/2) calc(3*var(--s)/2) var(--g) var(--c1);
+    conic-gradient(var(--c1) 75%,var(--c2) 0) 
+     calc(var(--s)/2) calc(var(--s)/2)/
+     calc(2*var(--s)) calc(2*var(--s));
 }
 </style><button>Copy the CSS</button>  
     </section>
